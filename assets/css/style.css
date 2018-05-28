@@ -29,20 +29,27 @@ header h1 {
 }
 
 nav {
-    width: 340px;
+    width: 280px;
     float: right;
     margin-top: 25px;
     text-align: center;
+    padding-top: 10px;
 }
 
 nav ul li {
     display: inline;
 }
 
+nav a:hover {
+    background: #4a94aa;
+    color: white;
+
+}
+
 nav a {
     color: #333;
     font-size: 16px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-right: 2px solid #4a94aa;
     text-decoration: none;
     transition-duration: 1s;
@@ -53,11 +60,6 @@ nav a {
 nav ul li:last-child a {
     border-right: none;
     padding-right: none;
-}
-
-nav a:hover {
-    background: #4a94aa;
-    color: white;
 }
 
 p {
@@ -95,7 +97,7 @@ footer {
     background: #666;
     color: #ccc;
     text-align: center;
-    padding: 40px;
+    padding: 40px 0px 10px 0px;
     margin-top: 10px;
     border-top: 5px solid #b8b7b7;
     position: fixed;
@@ -110,7 +112,7 @@ footer {
 
 .inline-img {
     float: left;
-    margin: 0 15px 15px 0;
+    margin: 5px 20px 10px 0px;
     border: 1px solid #777777;
 }
 
@@ -227,5 +229,100 @@ footer {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 980px) {
 
+    /* The wrapper's width will be 760px */
+    .wrapper {
+      width: 740px;
+      padding: 0px;
+    }
+
+    #right-column {
+        width: 100%;
+        float: right;
+        margin-top: 40px;
+        display: center;
+    }
+
+    #left-column {
+        width: 100%;
+        float: left;
+    }
+
+    nav {
+        width: 400px;
+        float: right;
+        text-align: center;
+    }
+
+}
+  
+@media screen and (max-width: 768px) {
+
+    /* The wrapper's width will be 600px */
+    .wrapper {
+      width: 620px;
+      padding: 0px;
+    }
+
+    #right-column {
+        width: 100%;
+        float: right;
+        margin-top: 40px;
+        display: center;
+    }
+
+    #left-column {
+        width: 100%;
+        float: left;
+    }
+
+    nav {
+        width: 275px;
+        float: right;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .wrapper {
+      width: 100%;
+      padding: 0px;
+    }
+
+    header {
+        width: 100%;
+        position: static;
+        height: 160px;
+    }
+
+    #right-column {
+        width: 100%;
+        float: right;
+        margin-top: 40px;
+        display: center;
+    }
+
+    #left-column {
+        width: 100%;
+        float: left;
+    }
+
+    nav {
+        width: 100%;
+        display: center;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        display: center;
+        margin: 0px auto;
+    }
+
+}
+  
 

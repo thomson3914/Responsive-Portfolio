@@ -32,6 +32,9 @@
         <section id="left-column">
             <h2>My Bootcamp Portfolio</h2>
 
+            <div class="portfolio-item" id="port6">
+                <h4>Liri-Node-Bot</h4>
+            </div>
             <div class="portfolio-item" id="port4">
                 <h4>Subway-Time</h4>
             </div>
@@ -45,9 +48,6 @@
                 <h4>Totally Trivia</h4>
             </div>
             <div class="portfolio-item" id="port5">
-                <h4>Liri-Node-App</h4>
-            </div>
-            <div class="portfolio-item" id="port6">
                 <h4>Port 6</h4>
             </div>
         </section>
@@ -95,6 +95,12 @@
 
     <script>
 
+        $("#port5").on("click", function () {
+            console.log("click it");
+            window.open("https://github.com/thomson3914/Liri-Node-Bot", "Liri-Node-Bot", "toolbar=no,scrollbars=no,resizable=yes,top=50,left=50,width=1000,height=750");
+        }
+        );
+
         $("#port1").on("click", function () {
             console.log("click it");
             window.open("https://thomson3914.github.io/unit-4-game/", "Crystals", "toolbar=no,scrollbars=no,resizable=yes,top=50,left=50,width=1000,height=750");
@@ -119,11 +125,7 @@
         }
         );
 
-        $("#port5").on("click", function () {
-            console.log("click it");
-            window.open("https://github.com/thomson3914/Liri-Node-Bot", "Liri-Node_App", "toolbar=no,scrollbars=no,resizable=yes,top=50,left=50,width=1000,height=750");
-        }
-        );
+
 
 
     </script>
